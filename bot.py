@@ -11,7 +11,6 @@ def get_active_window_title():
     window_handle = win32gui.GetForegroundWindow()
     return win32gui.GetWindowText(window_handle)
 
-
 clear()
 
 while True:
@@ -37,6 +36,7 @@ while True:
         slot11 = get_pixel(18, "slot11")
         slot12 = get_pixel(19, "slot12")
         debuff1 = get_pixel(20, "Debuff1")
+        isdead = get_pixel(21, "isdead?")
 
         # if not combat:
             #     if frost_armor == 0:
@@ -72,3 +72,5 @@ while True:
                 continue
 
             press('q')
+    else:
+        print("No world of warcraft window found.")
