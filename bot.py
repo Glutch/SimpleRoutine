@@ -42,9 +42,17 @@ while True:
         #         press('q', 'shift')
 
     if target_health > 0 and in_range:
-        if debuff1 and slot9:
+        if slot7:
+            press('7')
+            continue
+
+        if debuff1 and slot9: # Winter's Chill + Comet Storm
             press('f')
             continue
+
+        # if debuff1 and slot1: # ray of frost
+        #     press('f')
+        #     continue
 
         if fingers_of_frost:
             press('2')
