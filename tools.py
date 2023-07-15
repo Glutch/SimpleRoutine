@@ -2,9 +2,6 @@ import os
 import ctypes
 from PIL import Image
 import pyautogui
-import keyboard
-
-
 
 class POINT(ctypes.Structure):
     _fields_ = [("x", ctypes.c_long),("y", ctypes.c_long)]
