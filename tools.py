@@ -2,6 +2,9 @@ import os
 import ctypes
 from PIL import Image
 import pyautogui
+import keyboard
+
+
 
 class POINT(ctypes.Structure):
     _fields_ = [("x", ctypes.c_long),("y", ctypes.c_long)]
@@ -53,7 +56,6 @@ def get_pixel(i, name):
     text = f"{name}: {parsed_color}" + (' ' * 10)
     console_out.write(0, i - 1, text)
     return parsed_color
-
 
 def press(button, modifier = None):
   if modifier:
