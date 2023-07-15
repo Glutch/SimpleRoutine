@@ -32,8 +32,20 @@ while True:
     slot10 = get_pixel(17, "slot10")
     slot11 = get_pixel(18, "slot11")
     slot12 = get_pixel(19, "slot12")
+    debuff1 = get_pixel(20, "Debuff1")
+
+    # if not combat:
+        #     if frost_armor == 0:
+        #         press('e', 'shift')
+
+        #     if arcane_intellect == 0:
+        #         press('q', 'shift')
 
     if target_health > 0 and in_range:
+        if debuff1 and slot9:
+            press('f')
+            continue
+
         if fingers_of_frost:
             press('2')
             continue
@@ -45,11 +57,3 @@ while True:
     press('q')
 
     # global_cd = slot1
-
-    # if not combat:
-    #     if frost_armor == 0:
-    #         press('e', 'shift')
-
-    #     if arcane_intellect == 0:
-    #         press('q', 'shift')
-    
