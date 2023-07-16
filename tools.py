@@ -54,6 +54,15 @@ def get_pixel(i, name):
     console_out.write(0, i - 1, text)
     return parsed_color
 
+def get_all_pixel():
+    #WIP for later use
+    count = get_pixel(1, "count")
+    name = "test" 
+    for pixels in range(1, count):
+        get_pixel(pixels, name + str(pixels))
+    
+
+
 def press(button, modifier = None):
   if modifier:
     pyautogui.keyDown(modifier)

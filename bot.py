@@ -1,4 +1,4 @@
-from tools import get_pixel, clear, press
+from tools import get_pixel, clear, press, get_all_pixel
 import keyboard
 import win32gui
 
@@ -16,7 +16,7 @@ clear()
 while True:
     check_exit_hotkey()
     if get_active_window_title() == "World of Warcraft":
-        count = get_pixel(1, "Count")
+
         health = get_pixel(2, "Health")
         mana = get_pixel(3, "Mana")
         target_health = get_pixel(4, "TargetHP")
